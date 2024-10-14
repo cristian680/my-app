@@ -1,0 +1,9 @@
+
+<div class="pagination mat-elevation-z4">
+  <button mat-raised-button color="primary" (click)="previousPage()" [disabled]="currentPage === 1">Anterior</button>
+
+  <span class="page-info">Página {{ currentPage }} de {{ totalPages }}</span>
+
+  <button mat-raised-button color="primary" (click)="nextPage()" [disabled]="currentPage === totalPages">Siguiente</button>
+</div>
+

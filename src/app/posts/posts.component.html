@@ -1,0 +1,23 @@
+<div class="posts-container">
+  <h1>Títulos</h1>
+  <p>Hace clic en el título para ver los detalles</p>
+
+  <div *ngFor="let post of paginatedPosts" class="post-list mat-elevation-z2">
+    <mat-card>
+      <mat-card-title (click)="onSelectPost(post.id)" style="cursor: pointer;">
+        {{ post.title }}
+      </mat-card-title>
+    </mat-card>
+  </div>
+
+  <!-- Componente de paginación -->
+  <app-pagination
+    [totalItems]="totalItems"
+    [itemsPerPage]="itemsPerPage"
+    [currentPage]="currentPage"
+    (pageChange)="onPageChange($event)">
+  </app-pagination>
+</div>
+
+
+  

@@ -1,0 +1,42 @@
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+    min-height: 100vh; 
+    text-align: center;
+    padding: 20px;
+    background: -webkit-linear-gradient(90deg,#6e633e,#ac9970,#bda98e); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(90deg,#6e633e,#ac9970,#bda98e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  p {
+    font: 150% sans-serif;
+  }
+  
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  
+  .post-list {
+    width: 90%;
+    max-width: 800px;  
+    margin-bottom: 10px;
+  }
+  
+  mat-card {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  mat-card-title {
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  
